@@ -1,0 +1,1 @@
+To compile and run lex and yacc, just run the script Run.sh. If you want to just run lex, then run the script RunLex.sh, make sure you change directory to the one the files are in before running the scripts
