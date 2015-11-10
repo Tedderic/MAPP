@@ -24,7 +24,7 @@
 [/V][a-zA-Z0-9]{1,7}\n 			{printf("Voltage\n"); return VSOURCE;}
 [/i][a-zA-Z0-9]{1,7}\n 	 		{printf("current\n"); return ISOURCE;}
 [/I][a-zA-Z0-9]{1,7}\n 			{printf("Current\n"); return ISOURCE;}
-.						;
+.						{printf("Syntax error in line %d of %s\n",__LINE__,__FILE__); exit(0);}
 \n                      /* ignore end of line */;
 [ \t]+                  /* ignore whitespace */;
 %%
